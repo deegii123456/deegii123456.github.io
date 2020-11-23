@@ -1,0 +1,771 @@
+<html>
+<head>
+<style>
+		*{
+		box-sizing: border-box;
+		}
+		body{
+		margin:0;
+		}
+		.container{
+		display:flex;
+		width:90%;
+		justify-content: center;
+		align-items: center;
+		}
+		nav{
+			width:100%;
+			display: flex;
+			justify-content: space-between;
+			background-color:white;
+			height:13%;
+			position:fixed;
+		}
+		.name{
+			flex-grow: 5;
+			display:flex;	
+			justify-content: center;
+			font-size:2.5rem;
+			padding: 15px;
+			color: blue;
+		}
+		.list{
+			text-decoration:none;
+		}
+		.nav-links{
+			flex-grow: 9;
+			display:flex;	
+			justify-content: space-evenly;
+			width: 70%;
+			flex:1;
+		}
+		.nav-link:hover{
+			text-decoration: underline;
+		}
+		.nav-link {
+			text-decoration: none;
+			font-size:1.5rem;
+			color:#003e57;
+			padding: 25px 30px;
+			justify-content: center;
+			display: flex;
+		}
+		.head{
+		width:100%;
+		height:90%;
+		}
+		.ig1{
+		width:5%;
+		height:15%;
+		}
+		.ig1 img{
+		width:3%;
+		height:15%;
+		position:fixed;
+		}
+		.picture{
+		align-items: center;
+		justify-content:center;
+		width:97%;
+		height:80%;
+		display:flex;
+		text-direction: column;
+		}
+		.picture img{
+		width:80%;
+		height: 100%;
+		}
+		.text{
+		width:100%;
+		height:5%;
+		align-items: center;
+		justify-content:center;
+		display: flex;
+		}
+		.head2{
+		width:73%;
+		height:70%;
+		display:flex
+		align-items: center;
+		justify-content:center;
+		margin-left: 10%;
+		}
+	
+		.shoes{
+		align-items: center;
+		justify-content:center;
+		width:70%;
+		height:70%;
+		display:flex;
+		}
+		.shoes img{
+		align-items: center;
+		justify-content:center;
+		width:100%;
+		height: 100%;
+		display:flex;
+		}
+		.moda{
+		width:70%;
+		height:6%;
+		font-style:Helvetica;
+		}
+		.text2{
+		width:70%;
+		height:12%;
+		justify-content:center;
+		align-items: center;
+		display: flex;
+		}
+		.top{
+		width:50%;
+		height:60%;
+		margin-left:10%;
+		display: flex;
+		text-direction:column;
+		justify-content: space-between;
+		}
+		.top-left{
+		width:31%;
+		height:60%;
+		}
+		.bag{
+		width:100%;
+		height:87%;
+		}
+		.bag img{
+		width:100%;
+		height:100%;
+		}
+		.text3{
+		width:100%;
+		height:25%;
+		}
+		.top-right{
+		width:67%;
+		height:60%;
+		}
+		.food{
+		width:100%;
+		height:87%;
+		}
+		.food img{
+		width:100%;
+		height:100%;
+		}
+		.text4{
+		width:100%;
+		height:20%;
+		}
+		.bottom{
+		width:60%;
+		height:60%;
+		margin-left:10%;
+		display: flex;
+		text-direction:column;
+		
+		}
+		.bottom-left{
+		width:26%;
+		height:90%;
+		}
+		.hair{
+		width:100%;
+		height:59.5%;
+		}
+		.hair img{
+		width:100%;
+		height:100%;
+		}
+		.text5{
+		width:100%;
+		height:25%;
+		}
+		.bottom-right{
+		width:69%;
+		height:40%;
+		margin-left:15px;
+		
+		}
+		.24{
+		width:100%;
+		height:24%;
+		}
+		.24 img{
+		width:100%;
+		height:50%;
+		}
+		.text6{
+		width:75%;
+		height:23%;
+		}
+		.down{
+		width:60%;
+		height:80%;
+		margin-left:10%;
+		display: flex;
+		text-direction:column;
+		display: flex;
+		}
+		.down-left{
+		width:26%;
+		height:80%;
+		}
+		.jacket{
+		width:100%;
+		height:50%;
+		}
+		.jacket img{
+		width:100%;
+		height:100%;
+		}
+		.text7{
+		width:100%;
+		height:25%;
+		}
+		.down-right{
+		width:74%;
+		height:80%;
+		margin-left:15px;
+		}
+		.woman{
+		width:73%;
+		height:50%;
+		}
+		.woman img{
+		width:100%;
+		height:100%;
+		}
+		.text8{
+		width:75%;
+		height:25%;
+		}
+		.special{
+		display: flex;
+		margin-left: 10%;
+		height:25%
+		width:80%;
+		}
+		.center{
+		height:20%;
+		width:80%;
+		margin-left:10%;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		display: flex;
+		}
+		.one{
+		height:100%;
+		width:28%;
+		position: relative;
+		display:flex;
+		}
+		.one img{
+		height:100%;
+		width:100%;
+		border-radius:8px;
+		}
+		.two{
+		height:100%;
+		width:28%;
+		position: relative;
+		display:flex;
+		}
+		.two img{
+		height:100%;
+		width:100%;
+		border-radius:8px;
+		
+		}
+		.three{
+		height:100%;
+		width:28%;
+		position: relative;
+		display:flex;
+		
+		}
+		.three img{
+		height:100%;
+		width:100%;
+		border-radius:8px;
+		}
+		.text9{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.3);
+		border-radius:8px;
+		color: white;
+		}
+		.text10{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.3);
+		border-radius:8px;
+		color: white;
+		display: flex;
+		}
+		.text11{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.3);
+		border-radius:8px;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		}
+		.box{
+		width:80%;
+		height:80%;
+		display: flex;
+		margin-left:10%;
+		align-items: center;
+		justify-content: center;
+		}
+		.box-left{
+		width:70%;
+		height:70%;
+		display: flex;
+		justify-content: center;
+		flex-wrap:wrap;
+		}
+		table, th, td {
+		  border: 3px solid black;
+		  border-collapse: collapse;
+		}
+
+		.table{
+		width:100%;
+		height:50%;
+		}
+		.table img{
+		width:30%;
+		height:100%;
+		border-radius:20%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		}
+		.text12{
+		width:100%;
+		height:20%;
+		justify-content: center;
+		flex-wrap:wrap;
+		align-items: center;
+		display: flex;
+		}
+		.box-right{
+		width:30%;
+		height:70%;
+		display: flex;
+		}
+		.mss{
+		width:100%;
+		height:100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position:relative;
+		}
+		.mss img{
+		width:100%;
+		height:100%;
+		border-radius:50%;
+		}
+		.text13{
+		width:100%;
+		height:60%;
+		position:absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		}
+		.circle{
+		width:100%;
+		height:80%;
+		margin-left:10%;
+		display: flex;
+		text-direction:column;
+		}
+		.circle-left{
+		width:28%;
+		height:95%;
+		}
+		.jack{
+		width:80%;
+		height:65%;
+		}
+		.jack img{
+		width:100%;
+		height:100%;
+		border-radius:50%;
+		}
+		.text14{
+		width:100%;
+		height:20%;
+		}
+		.circle-right{
+		width:28%;
+		height:95%;
+		}
+		.circle-center{
+		width:28%;
+		height:95%;
+		}
+		.wom{
+		width:80%;
+		height:65%;
+		}
+		.wom img{
+		width:100%;
+		height:100%;
+		border-radius:50%;
+		}
+		.text15{
+		width:75%;
+		height:20%;
+		}
+		.text16{
+		width:75%;
+		height:20%;
+		}
+		.man{
+		width:80%;
+		height:65%;
+		}
+		.man img{
+		width:100%;
+		height:100%;
+		border-radius:50%;
+		}
+		.big{
+		width:100%;
+		height:80%;
+		margin-left:10%;
+		}
+		.big1{
+		width:80%;
+		height:80%;
+		}
+		.big img{
+		width:100%;
+		height:100%;
+		}
+		.text17{
+		width:75%;
+		height:20%;
+		}
+		.end{
+		width:100%;
+		height:70%;
+		margin-left:10%;
+		display: flex;
+		text-direction:column;
+		}
+		.end1{
+		width:38%;
+		height:100%;
+		}
+		.A{
+		width:100%;
+		height:65%;
+		}
+		.A img{
+		width:100%;
+		height:100%;
+		}
+		.text18{
+		width:100%;
+		height:30%;
+		}
+		.end2{
+		width:38%;
+		height:100%;
+		margin-left:4%;
+		}
+		.B{
+		width:100%;
+		height:65%;
+		}
+		.B img{
+		width:100%;
+		height:100%;
+		}
+		.text19{
+		width:100%;
+		height:30%;
+		}
+		.finish{
+		width:100%;
+		height:100%;
+		margin-left:10%;
+		}
+		.finish1{
+		width:80%;
+		height:85%;
+		}
+		.finish1 img{
+		width:100%;
+		height:100%;
+		}
+		.text20{
+		width:100%;
+		height:15%;
+		}
+		.web{
+		width:100%;
+		height:15%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		}
+		.footer{
+		width:100%;
+		height: 90%;
+		background: #232323;
+		}
+		.logo{
+		width:100%;
+		height:40%;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		fond: bold;
+		display: flex;}
+		.foot{
+		width:100%;
+		height:10%;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		display: flex;
+		}
+		#arrow{
+		font-size:0.5em;
+		}
+		.menu-item{
+		padding:0.5rem;
+		}
+		.menu-item:hover{
+		background-color:rgb(220,220,220);
+		cursor:pointer;
+		}
+		.dropdown{
+		position: relative;
+		}
+		.dropdown:hover .dropdown-items{
+		display:block;
+		}
+		.dropdown-items{
+		background-color:white;
+		border-radius:2px;
+		display:none;
+		width:70%;
+		position:absolute;
+		top:100%;
+		left:0;
+		}
+		.dropdown-item{
+		padding:0.1rem 0.5rem;
+		}
+		.search{
+		width:100%;
+		height:5%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		}
+		.good{
+		width:100%;
+		height:5%;
+		justify-content: center;
+		color: white;
+		display: flex;
+		text-direction: column;
+		color: grey;}
+</style>
+</head>
+<body>
+	
+		<nav>
+			<div class="name">BURO.</div>
+			<div class="nav-links">
+			<div class="nav-link dropdown">Moda<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">VISEKI</div>
+				<div class="menu-item dropdown-item">HAIR</div>
+				<div class="menu-item dropdown-item">FACE</div>
+				<div class="menu-item dropdown-item">NAILIST</div>
+				<div class="menu-item dropdown-item">EYEBROW</div>
+				<div class="menu-item dropdown-item">LIPS GLOSS</div>
+				</div></div>
+			<div class="nav-link dropdown">Kultura<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">OLD</div>
+				<div class="menu-item dropdown-item">NEW</div>
+				<div class="menu-item dropdown-item">KULTURA</div>
+				<div class="menu-item dropdown-item">HISTORY</div>
+				</div></div>
+			<div class="nav-link dropdown">Medeji<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">FLOWER</div>
+				<div class="menu-item dropdown-item">COLLECTION</div>
+				<div class="menu-item dropdown-item">EARRING</div>
+				<div class="menu-item dropdown-item">RING</div>
+				<div class="menu-item dropdown-item">ACSOSIORS</div>
+				<div class="menu-item dropdown-item">DIAMOND</div>
+				</div></div>
+			<div class="nav-link dropdown">Beauty<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">LIP</div>
+				<div class="menu-item dropdown-item">HAIR</div>
+				<div class="menu-item dropdown-item">FACE</div>
+				<div class="menu-item dropdown-item">HAND</div>
+				<div class="menu-item dropdown-item">EYEBROW</div>
+				<div class="menu-item dropdown-item">LIPS</div>
+				</div></div>
+			<div class="nav-link dropdown">Lifestyle<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">HICKING</div>
+				<div class="menu-item dropdown-item">TRAVEL</div>
+				<div class="menu-item dropdown-item">PLACE</div>
+				<div class="menu-item dropdown-item">FAMILY</div>
+				<div class="menu-item dropdown-item">FREEDOM</div>
+				<div class="menu-item dropdown-item">STREET</div>
+				</div></div>
+			<div class="nav-link dropdown">Fashion<span id="arrow"><span>
+			<div class="dropdown-items">
+				<div class="menu-item dropdown-item">BAG</div>
+				<div class="menu-item dropdown-item">SHOES</div>
+				<div class="menu-item dropdown-item">JACKET</div>
+				<div class="menu-item dropdown-item">BLAZER</div>
+				<div class="menu-item dropdown-item">DRESS</div>
+				<div class="menu-item dropdown-item">HAT</div>
+				</div></div>
+		</nav>
+			<div id="container">
+		<div class="head">
+			<div class="picture"><img src="2.jpg"></div>
+			<div class="text"><h1>Veliki povratak Sharon Stone</h1></div>
+			<div class="ig1"><img src="IG.png"></div>
+		</div>
+		<div class="head2">	
+			<div class="shoes"><img src="1.jpg"></div>
+			<div class="moda"><p>MODA | DODACI</p></div>
+			<div class="text2"><h2>Kako je ova dizajnerica u jeku pandemije uspjela prodavati jako skupe cipele?<h2></div>
+		</div>
+		<div class="top">
+				<div class="top-left">
+			<div class="bag"><img src="3.jpg"></div>
+			<div class="moda">MODA | EKSPERT</div>
+			<div class="text3"><p>I da svijet ode kvragu, žene će kupovati torbice</p></div>
+		</div>
+				<div class="top-right">
+			<div class="food"><img src="4.jpg"></div>
+			<div class="moda">LIFESTYLE | GASTRO</div>
+			<div class="text4"><h1>Sve zagrebačke gastro adrese otvorene u zadnjih pola godine koje biste trebali imati na umu</h1></div>
+		</div>
+		</div>
+			<div class="bottom">
+				<div class="bottom-left">
+			<div class="hair"><img src="5.jpg"></div>
+			<div class="moda">BEAUTY | EKSPERT</div>
+			<div class="text5"><p>Kako stilizirati kratki bob na 4 načina? Pokazala nam je Teuta Mesaroš</p></div>
+		</div>
+				<div class="bottom-right">
+			<div class="24"><img src="7.jpg"></div>
+			<div class="moda">MODA | BURO 24/7 IZBOR</div>
+			<div class="text6"><h1>Što ove sezone nose Hrvatice? Najbolje čizme koje smo vidjeli na Instagramu</h1></div>
+		</div>
+		</div>
+			<div class="down">
+				<div class="down-left">
+			<div class="jacket"><img src="6.jpg"></div>
+			<div class="moda">LIFESTYLE | EKSPERT</div>
+			<div class="text7"><p>Radite li i vi za jednog od šefova iz pakla?</p></div>
+		</div>
+				<div class="down-right">
+			<div class="woman"><img src="8.jpg"></div>
+			<div class="moda">MODA | EKSPERT</div>
+			<div class="text8"><h1>Ratched: kako je chic estetika poslužila kao zavjesa za jezive scene?</h1></div>
+		</div>
+		</div>
+			<div class="special"><h2>SPECIAL PROJECT------------------------------------------------------------------------------------------</h2></div>
+		<div class="center">
+			<div class="one"><img src="o.jpg">
+			<div class="text9"><h3>Obožavam komplete! Mislim da su najbolji odabir za sunčane jesenske dane</h3></div></div>
+			<div class="two"><img src="t.jpg">
+			<div class="text10"><h3>Početkom rujna Tommy Hilfiger kupci širom svijeta su dobili priliku da na specijalnoj online platformi </h3></div></div>
+			<div class="three"><img src="th.jpg">
+			<div class="text11"><h3>Sinonim za opušteni luksuz i upečatljivu jednostavnost, Calvin Klein Jeans kolekcija poznata je po.</h3> 
+		</div>
+		</div>
+		</div>
+		<div class="box">
+		<div class="box-left">
+		<table style="width:95%; height:97%;>
+				<img src="ana.jpg"></h2></div></td>
+				<td><div class="text12"><h1>Radite li i vi za jednog od šefova iz pakla?<h1></div>
+			</td></table>
+		</th>
+		</div>
+			<div class="box-right">
+				<div class="mss"><img src="miss.jpg">
+				<div class="text13"><h1>ANNA WINTOUR A-Z</h1></div></div>
+			</div>
+		</div>
+		<div class="circle">
+				<div class="circle-left">
+			<div class="jack"><img src="100.jpg"></div>
+			<div class="moda">LIFESTYLE | DIJIGAN ARHITEKTURA</div>
+			<div class="text14"><h2>Radite li i vi za jednog od šefova iz pakla?</h2></div>
+				</div>
+				<div class="circle-center">
+			<div class="wom"><img src="200.jpg"></div>
+			<div class="moda">MODA | MODA DODACI</div>
+			<div class="text15"><h2>Ratched: kako je chic estetika poslužila kao zavjesa za jezive scene?</h2></div>
+				</div>	
+				<div class="circle-right">
+			<div class="man"><img src="300.jpg"></div>
+			<div class="moda">MODA | EKSPERT</div>
+			<div class="text16"><h2>Ratched: kako je chic estetika poslužila kao zavjesa za jezive scene?</h2></div>
+				</div>
+		</div>
+				<div class="big">
+			<div class="big1"><img src="400.jpg"></div>
+			<div class="moda">MODA | EKSPERT</div>
+			<div class="text17"><h2>Osam divnih kreativnih žena iz Hrvatske za koje trebate znati (2. dio)</h2></div>
+		</div>
+				<div class="end">
+		<div class="end1">
+			<div class="A"><img src="500.jpg"></div>
+			<div class="moda">MODA | BURO 24/7</div>
+			<div class="text18"><h2>7 bodija koji će osvježiti i najobičnije traperice</h2></div>
+		</div>
+		<div class="end2">
+			<div class="B"><img src="600.jpg"></div>
+			<div class="moda">MODA | BURO 24/7 </div>
+			<div class="text19"><h2>Džemper ili dekica? Donosimo vam najudobnije komade za jesen</h2></div>
+		</div>
+		</div>
+		<div class="finish">
+			<div class="finish1"><img src="end.jpg"></div>
+			<div class="moda">MODA | EKSPERT</div>
+			<div class="text20"><h2>Osam divnih kreativnih žena iz Hrvatske za koje trebate znati (2. dio)</h2></div>
+		</div>
+		<div class="web"></div>
+		<div class="footer">
+				<div class="logo"><h1>BURO.</h1></div>
+				<div class="foot"><h1>Subscribe to the latest news</h1></div>
+				<div class="search">EMAIL ADDRESS</div>
+				<div class="good"><p> I accept the privacy policy</p></div>
+		</div>
+		</div>
+</body>
+</body>
+</html>
